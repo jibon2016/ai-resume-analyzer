@@ -9,3 +9,5 @@ export function formatSize(bytes: number): string {
     const gb = mb / 1024;
     return `${gb.toFixed()} GB`;
 }
+
+export const generateUUID = () => crypto.randomUUID();
